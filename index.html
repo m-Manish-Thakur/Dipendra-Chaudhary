@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dipendra Chaudary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Comfortaa:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=DM+Serif+Display&family=Inter:wght@100;300;400;500;600;700&family=Italiana&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600;700;800&family=Karla:wght@200;300;400;500;600;700&family=Kristi&family=Kumbh+Sans:wght@400;500;600;700;900&family=Lobster+Two:ital@1&family=Marcellus&family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Roboto&family=Rubik+Moonrocks&family=Rubik:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500&family=Sriracha&family=Tiro+Kannada&family=Varela+Round&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header">
+      <h4 class="logo"><img src="Images/logo.png" alt="Logo" /> Dipendra</h4>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#myWork">My Work</a>
+      </nav>
+      <a href="#contact" id="button">
+        Let's Talk
+        <i class="fa-regular fa-paper-plane" style="margin-left: 5px"></i>
+      </a>
+      <div
+        id="menuBtn"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
+        <span style="width: 27px"></span>
+        <span style="width: 20px"></span>
+        <span style="width: 12px"></span>
+      </div>
+    </header>
+
+    <!-- #####################   Responsive Navbar  ####################### -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-body">
+        <a href="#"
+          ><span data-bs-dismiss="offcanvas" aria-label="Close">Home</span></a
+        >
+        <a href="#about"
+          ><span data-bs-dismiss="offcanvas" aria-label="Close">About</span>
+        </a>
+        <a href="#skills"
+          ><span data-bs-dismiss="offcanvas" aria-label="Close"
+            >My Skills</span
+          ></a
+        >
+        <a href="#myWork"
+          ><span data-bs-dismiss="offcanvas" aria-label="Close"
+            >My Work</span
+          ></a
+        >
+        <a href="#services"
+          ><span data-bs-dismiss="offcanvas" aria-label="Close"
+            >Services</span
+          ></a
+        >
+        <a href="#contact" id="button">
+          <span data-bs-dismiss="offcanvas" aria-label="Close">Let's Talk</span>
+          <i class="fa-regular fa-paper-plane" style="margin-left: 5px"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- #####################   Responsive Navbar  ####################### -->
+
+    <div id="body">
+      <div id="home">
+        <div id="heroTxt">
+          <h1 data-aos="zoom-in-right">Hey, I'm Dipendra 👋</h1>
+          <div class="d-flex align-items-center">
+            <span
+              style="height: 1px; width: 100px; background-color: aliceblue"
+            ></span>
+            <span class="workSpan">
+              <span class="header-sub-title" id="word"></span
+              ><span class="header-sub-title blink" id="word">|</span>
+            </span>
+          </div>
+          <p>
+            I'm creative video editor based in New Delhi, and I'm very
+            passionate and dedicated to my work.
+          </p>
+
+          <div class="buttons">
+            <button class="sayHello">
+              Resume <i class="fa-regular fa-file-lines"></i>
+            </button>
+            <button class="myWork">
+              My Work
+              <i
+                class="fa-solid fa-arrow-up-long"
+                style="transform: rotate(50deg)"
+              ></i>
+            </button>
+          </div>
+          <div class="links">
+            <span>Follow Me: </span>
+            <div style="display: flex">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-behance"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="img"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
+          <img src="Images/me.png" alt="Dipendra" class="myimg" />
+          <img src="Images/blobanimation.svg" class="blob" />
+        </div>
+      </div>
+
+      <div id="about">
+        <div class="aboutContent">
+          <div class="img">
+            <img src="Images/meabout.png" data-aos="zoom-in-right" />
+            <div class="exp" data-aos="zoom-in-right">
+              <h2>2+</h2>
+              <p>
+                Years of <br />
+                Experience
+              </p>
+              <div></div>
+            </div>
+          </div>
+          <div class="aboutText">
+            <div style="display: flex; align-items: center; column-gap: 25px">
+              <span
+                style="
+                  width: 50px;
+                  height: 3px;
+                  border-radius: 5px;
+                  background: linear-gradient(to right, #8863ff, #6244c51f);
+                "
+              ></span>
+              <span>About Me</span>
+            </div>
+            <h1
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
+            >
+              Let's <span>Make</span> your Video <br />
+              Looks More <span>Cool</span>
+            </h1>
+            <p data-aos="zoom-up" data-aos-duration="1000">
+              My name is Dipendra Chaudhary, and I am a dedicated video editor
+              and passionate YouTuber. With a diploma in Photography and
+              Editing, I've honed my skills in the art of visual storytelling.
+              Proficiency in various video editing software and techniques
+              allows me to bring out the best in every project. My strong
+              collaborative spirit and commitment to meeting deadlines ensure
+              smooth and efficient project execution.
+            </p>
+            <div class="buttons">
+              <button>Hire Me</button>
+              <div class="call">
+                <img
+                  src="https://uploads-ssl.webflow.com/63de8252cc6c4828ae31cfa5/64ec6a72a7c91808f2580959_call-icon.svg"
+                />
+                <p>
+                  Need Help? <br />
+                  +91-9558784589
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="clients">
+        <div style="display: flex; align-items: center; column-gap: 25px">
+          <span
+            style="
+              width: 50px;
+              height: 3px;
+              border-radius: 5px;
+              background: linear-gradient(to right, #8863ff, #6244c51f);
+            "
+          ></span>
+          <span>Our Trusted Brands</span>
+          <span
+            style="
+              width: 50px;
+              height: 3px;
+              border-radius: 5px;
+              background: linear-gradient(to left, #8863ff, #6244c51f);
+            "
+          ></span>
+        </div>
+        <div class="con">
+          <img
+            src="Images/brand1.png"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          />
+          <img
+            src="Images/brand2.png"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          />
+          <img
+            src="Images/brand3.webp"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          />
+          <img
+            src="Images/brand4.webp"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          />
+          <img
+            src="Images/brand5.webp"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          />
+          <img
+            src="Images/brand6.png"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          />
+        </div>
+      </div>
+
+      <div id="experience">
+        <div class="leftSection">
+          <div style="display: flex; align-items: center; column-gap: 25px">
+            <span
+              style="
+                width: 55px;
+                height: 3px;
+                background: linear-gradient(to right, #8863ff, #7354d81e);
+              "
+            ></span>
+            <span>Experience</span>
+          </div>
+          <h1
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+          >
+            My <span>Experience</span>
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+          >
+            As a video editor proficient in industry-standard tools such as
+            Premiere Pro, After Effects, and Da Vinci Resolve, my expertise
+            spans creative storytelling, advanced post-production techniques,
+            and precise color correction.
+          </p>
+          <div class="buttons">
+            <button>Hire Me</button>
+            <button class="mywork">View my Work</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <div
+            class="exp"
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+          >
+            <img
+              src="https://uploads-ssl.webflow.com/63de8252cc6c4828ae31cfa5/64e0ea1cae39386939b9f6ff_Service-icon-1.png"
+              alt=""
+            />
+            <div class="text">
+              <p>Kabita's Kichen</p>
+              <h4>Video Editor</h4>
+              <h5>May 2023 - Present</h5>
+            </div>
+          </div>
+          <div
+            class="exp"
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+          >
+            <img
+              src="https://uploads-ssl.webflow.com/63de8252cc6c4828ae31cfa5/64ecd44272cc92d2af49df72_Service-icon-3.png"
+              alt=""
+            />
+            <div class="text">
+              <p>Yatisha Production</p>
+              <h4>Video Editor</h4>
+              <h5>April 2022 - Feb 2023</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ############################   My Skills  #################################### -->
+
+      <div id="skills">
+        <h1 data-aos="fade-up">My <span>Skills</span></h1>
+        <p>My expertise in Video Editor and Videography</p>
+        <div class="container">
+          <div class="item" data-aos="zoom-in" data-aos-duration="1000">
+            <img
+              src="https://seeklogo.com/images/A/adobe-photoshop-express-logo-CB0F9C1CDD-seeklogo.com.png"
+              alt=""
+            />
+            <p>Photoshop</p>
+          </div>
+          <div class="item" data-aos="zoom-in" data-aos-duration="1000">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5440/5440097.png"
+              alt=""
+            />
+            <p>After Effect</p>
+          </div>
+          <div class="item" data-aos="zoom-in" data-aos-duration="1000">
+            <img
+              src="https://seeklogo.com/images/D/davinci-resolve-logo-7E957EF36A-seeklogo.com.png"
+              alt=""
+            />
+            <p>DaVinci Res.</p>
+          </div>
+          <div class="item" data-aos="zoom-in" data-aos-duration="1000">
+            <img
+              src="https://seeklogo.com/images/A/adobe-premiere-cc-logo-2B72AFF7E6-seeklogo.com.png"
+            />
+            <p>Premiere Pro</p>
+          </div>
+          <div class="item" data-aos="zoom-in" data-aos-duration="1000">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/768px-ChatGPT_logo.svg.png"
+              alt=""
+            />
+            <p>ChatGPT</p>
+          </div>
+          <div class="item" data-aos="zoom-in" data-aos-duration="1500">
+            <img
+              src="https://seeklogo.com/images/C/canva-logo-B4BE25729A-seeklogo.com.png"
+              alt=""
+            />
+            <p>Canva</p>
+          </div>
+          <div class="item" data-aos="zoom-in" data-aos-duration="1500">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Adobe_Photoshop_Express_logo_%282020%29.svg/2101px-Adobe_Photoshop_Express_logo_%282020%29.svg.png"
+              alt=""
+            />
+            <p>Adobe Express</p>
+          </div>
+          <div class="item" data-aos="zoom-in" data-aos-duration="1500">
+            <img
+              src="https://seeklogo.com/images/Y/youtube-square-logo-3F9D037665-seeklogo.com.png"
+              style="border-radius: 20px"
+            />
+            <p>YT Algorithm</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ############################   Services  ##################################### -->
+
+      <div id="services">
+        <main>
+          <div class="leftSection">
+            <h1 data-aos="fade-up">
+              What Can I <span>Do</span> For <br />
+              Your <span>Needs</span>
+            </h1>
+            <p data-aos="zoom-in">
+              If you are looking for someone who will help you to build your
+              digital web presence than congratulations!
+            </p>
+            <div class="stats">
+              <div class="item">
+                <h3>25+</h3>
+                <p>Projects Complete</p>
+              </div>
+              <div class="item">
+                <h3>20+</h3>
+                <p>Trusted Clients</p>
+              </div>
+              <div class="item">
+                <h3>2+</h3>
+                <p>Years of Experience</p>
+              </div>
+              <div class="item">
+                <h3>100+</h3>
+                <p>Community Network</p>
+              </div>
+            </div>
+          </div>
+          <div class="rightSection">
+            <div class="item" data-aos="zoom-in" data-aos-duration="1500">
+              <div style="display: flex; align-items: center">
+                <img
+                  src="https://www.shutterstock.com/shutterstock/videos/1081799843/thumb/1.jpg?ip=x480"
+                />
+                <div>
+                  <h4>Video Editing</h4>
+                  <p>20+ Projects</p>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </div>
+            <div class="item" data-aos="zoom-in" data-aos-duration="1500">
+              <div style="display: flex; align-items: center">
+                <img
+                  src="https://media.istockphoto.com/id/1198906209/photo/video-montager-mounts-video-at-desktop-home-workstation.webp?b=1&s=170667a&w=0&k=20&c=z6-tnUot67q5gvePI28fQJP3zOJP6ptA_miXFIT6B9U="
+                />
+                <div>
+                  <h4>Photo Editing</h4>
+                  <p>20+ Projects</p>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </div>
+            <div class="item" data-aos="zoom-in" data-aos-duration="1500">
+              <div style="display: flex; align-items: center">
+                <img
+                  src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D"
+                />
+                <div>
+                  <h4>Videography</h4>
+                  <p>20+ Projects</p>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </div>
+          </div>
+        </main>
+        <div class="servicesCon">
+          <div class="item" data-aos="fade-up" data-aos-duration="1500">
+            <img src="Images/ser1.png" />
+            <h2>Video Editing</h2>
+            <p>
+              We works on interior design, Real Estate, Cooking videos, Youtube
+              Blogs, Fashion Videos etc.
+            </p>
+            <a href="#"
+              >Start a Project
+              <i
+                class="fa-solid fa-arrow-up-long"
+                style="transform: rotate(50deg); margin-left: 5px"
+              ></i
+            ></a>
+          </div>
+          <div class="item" data-aos="fade-up" data-aos-duration="1500">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/edit-4329889-3599700.png"
+              style="height: 70px"
+            />
+            <h2>Photo Editing</h2>
+            <p>
+              We works on High End Retouching, Amazon & Flipkart Brands,
+              Thumbnail Design, Manipulation etc.
+            </p>
+            <a href="#"
+              >Start a Project
+              <i
+                class="fa-solid fa-arrow-up-long"
+                style="transform: rotate(50deg); margin-left: 5px"
+              ></i
+            ></a>
+          </div>
+          <div class="item" data-aos="fade-up" data-aos-duration="1500">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/camera-5864441-4897358.png?f=webp"
+              style="height: 70px"
+            />
+            <h2>Videography</h2>
+            <p>
+              We works on Cooking videos, Fashion, Real Estate, Blogs, Green
+              Screen, Pre-Wedding etc
+            </p>
+            <a href="#"
+              >Start a Project
+              <i
+                class="fa-solid fa-arrow-up-long"
+                style="transform: rotate(50deg); margin-left: 5px"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ######################################   My Work   ########################################## -->
+
+      <div id="myWork">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <div style="display: flex; align-items: center; column-gap: 25px">
+              <span
+                style="
+                  width: 50px;
+                  height: 3px;
+                  border-radius: 5px;
+                  background: linear-gradient(to right, #8863ff, #6244c51f);
+                "
+              ></span>
+              <span>Portfolio</span>
+            </div>
+            <h1 data-aos="zoom-up" data-aos-duration="1500">
+              Browse My <span>Work</span>
+            </h1>
+          </div>
+          <button>See All</button>
+        </div>
+
+        <div class="container">
+          <div class="item">
+            <iframe
+              src="https://drive.google.com/file/d/1Xch_4uANpC56PzXEyVrFHFpqoDFSdCP_/preview"
+              allow="autoplay"
+            ></iframe>
+            <h3>Car Video</h3>
+            <span>Video Editing</span>
+            <span>Car Video</span>
+            <span>Video Editing</span>
+          </div>
+          <div class="item">
+            <iframe
+              src="https://drive.google.com/file/d/1dRggFYeydSwsKbDtRDFQwF56OINJvOc1/preview"
+              allow="autoplay"
+            ></iframe>
+            <h3>Color Gradient</h3>
+            <span>Video Editing</span>
+            <span>Car Video</span>
+            <span>Video Editing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- #############################################   My Social Media Profiles   ################################# -->
+
+      <div id="socialMedia">
+        <div style="display: flex; align-items: center; column-gap: 25px">
+          <span
+            style="
+              width: 50px;
+              height: 3px;
+              border-radius: 5px;
+              background: linear-gradient(to right, #8863ff, #6244c51f);
+            "
+          ></span>
+          <span>My Profile</span>
+          <span
+            style="
+              width: 50px;
+              height: 3px;
+              border-radius: 5px;
+              background: linear-gradient(to left, #8863ff, #6244c51f);
+            "
+          ></span>
+        </div>
+        <h1 data-aos="zoom-up" data-aos-duration="1500">
+          Available Here <br />
+          Follow <span>Me</span>
+        </h1>
+        <div class="container">
+          <div
+            class="item"
+            style="background-color: #486cb4"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <i class="fa-brands fa-facebook-f" style="color: #486cb4"></i>
+            <div>
+              <h5>Facebook</h5>
+              <p>facebook.com/username</p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background: #e52eab"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <i class="fa-brands fa-instagram" style="color: #d6249f"></i>
+            <div>
+              <h5>Instagram</h5>
+              <p>instagram.com/username</p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background-color: #0072b1"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <i class="fa-brands fa-linkedin-in" style="color: #0072b1"></i>
+            <div>
+              <h5>Linkedin</h5>
+              <p>linkedin.com/username</p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background-color: #da1a2a"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <i class="fa-brands fa-youtube" style="color: #da1a2a"></i>
+            <div>
+              <h5>Youtube</h5>
+              <p>youtube.com/username</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div class="leftSection">
+          <div style="height: 4px; width: 150px; background-color: #fff"></div>
+          <h1>
+            Interested in working together? Let's talk
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </h1>
+        </div>
+        <form>
+          <input type="text" placeholder="Enter your name" />
+          <input type="email" placeholder="Your email address" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="4"
+            placeholder="Describe your project"
+          ></textarea>
+          <button>
+            Contact me <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </form>
+      </div>
+      <p id="developer">
+        Design and developed by
+        <a href="https://manish-thakur-portfolio.netlify.app/" target="_blank"
+          >Manish Thakur <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+      </p>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="app.js"></script>
+</html>
