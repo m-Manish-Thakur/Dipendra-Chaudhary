@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 50;
   transition: ease 0.3s;
   background: #1b1f241d;
   backdrop-filter: blur(16px);
@@ -52,7 +52,7 @@ header h4 {
 header img {
   height: 40px;
 }
-header a {
+header nav a {
   font-family: "kumbh sans";
   font-weight: 400;
   font-size: 17px;
@@ -63,7 +63,7 @@ header a {
   margin: 0 15px;
   padding: 10px 3px;
 }
-header a::after {
+header nav a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -75,18 +75,43 @@ header a::after {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-header a:hover::after {
+header nav a:hover::after {
   color: #8059ff;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
+header #GoBack {
+  padding: 13px 30px;
+  background-color: #8059ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-family: "kumbh sans";
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 17px;
+}
+header .goBack {
+  padding: 0;
+}
+header #GoBack i {
+  margin-right: 15px;
+}
+header #GoBack:hover {
+  background-color: #6244c5;
+}
 header #button {
-  padding: 10px 0;
-  color: #e6e6e6;
-  font-weight: 600;
-  font-family: "dm sans";
+  font-family: "kumbh sans";
+  font-weight: 400;
+  font-size: 17px;
   letter-spacing: 0.3px;
+  color: var(--light-text);
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+}
+header #button:hover {
+  color: #8059ff;
 }
 header #button i {
   padding: 10px;
@@ -146,10 +171,10 @@ header #menuBtn span {
   row-gap: 30px;
 }
 #offcanvasWithBothOptions .offcanvas-body a {
-  font-size: 25px;
-  font-family: "DM sans";
-  font-weight: 600;
-  letter-spacing: 0.3px;
+  font-size: 23px;
+  font-family: "kumbh sans";
+  font-weight: 500;
+  letter-spacing: 0.5px;
   color: #e7e3e3;
   text-decoration: none;
 }
@@ -160,9 +185,9 @@ header #menuBtn span {
   border-radius: 20px;
   background-color: #6244c5;
   color: aliceblue;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "dm sans";
-  letter-spacing: 0.3px;
+  letter-spacing: 0.7px;
 }
 
 /* #################################   Home Page  ############################################## */
@@ -263,6 +288,7 @@ header #menuBtn span {
   font-size: 17px;
   letter-spacing: 0.3px;
   border: none;
+  color: white;
 }
 #home #heroTxt .buttons .myWork::after {
   content: "";
@@ -376,9 +402,6 @@ header #menuBtn span {
 
 #about {
   width: 100vw;
-  background: linear-gradient(to top, transparent, var(--bg-color)),
-    url("https://www.netlify.com/images/home/composable-platform-stack-shells.svg");
-  background-size: cover;
 }
 #about .aboutContent {
   width: 100vw;
@@ -534,6 +557,9 @@ header #menuBtn span {
   }
 }
 @media screen and (max-width: 620px) {
+  #about {
+    background: none;
+  }
   #about .aboutContent .img {
     width: 300px;
     height: 400px;
@@ -583,9 +609,6 @@ header #menuBtn span {
     line-height: 50px;
     margin-top: 25px;
   }
-  #about .aboutContent .aboutText .buttons {
-    display: none;
-  }
   #about .aboutContent .aboutText {
     width: 100%;
     margin-top: 50px;
@@ -621,7 +644,7 @@ header #menuBtn span {
 }
 #clients .con img {
   height: 50px;
-  filter: grayscale(2);
+  filter: grayscale(0.2);
 }
 
 @media screen and (max-width: 500px) {
@@ -896,10 +919,6 @@ header #menuBtn span {
   width: 100vw;
   padding: 150px 8vw;
   background-color: #1b1f24;
-  background-position: center;
-  background: linear-gradient(to top, #2a2e3300, #1b1f2400),
-    url(https://www.netlify.com/images/home/composable-platform-stack-shells.svg);
-  background-size: cover;
 }
 #services main {
   display: flex;
@@ -1261,6 +1280,9 @@ header #menuBtn span {
   align-items: center;
   justify-content: center;
 }
+#socialMedia .container a {
+  text-decoration: none;
+}
 #socialMedia .container .item h5 {
   color: white;
   margin-bottom: 0;
@@ -1441,5 +1463,135 @@ header #menuBtn span {
 @media screen and (max-width: 500px) {
   #developer a {
     display: block;
+  }
+}
+
+/* ########################################   My Work Page   ############################################## */
+
+#workPage {
+  padding: 130px 8vw;
+}
+#workPage h1 {
+  font-family: "kumbh sans";
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+}
+#workPage h1 span {
+  background-color: #768fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+#workPage #filter-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 50px;
+  position: sticky;
+  top: 5px;
+  z-index: 60;
+}
+#workPage #filter-controls div {
+  background-color: #31363b;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+#workPage #filter-controls button {
+  padding: 10px 15px;
+  border: none;
+  font-family: "kumbh sans";
+  letter-spacing: 0.5px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+#workPage #filter-controls .filterBtn.active {
+  background-color: #8059ff;
+  color: #ffffff;
+  border-radius: 35px;
+  font-weight: 500;
+}
+/* #workPage #filter-controls button:nth-child(1) {
+  background-color: #8059ff;
+  color: #ffffff;
+  border-radius: 35px;
+  font-weight: 500;
+} */
+#workPage #projects-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  row-gap: 30px;
+}
+#workPage #projects-list .item {
+  width: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #373b3f;
+}
+#workPage #projects-list .item h3 {
+  font-family: "kumbh sans";
+  font-size: 23px;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+#workPage #projects-list .item iframe {
+  width: 370px;
+  height: 210px;
+}
+#workPage #projects-list .item p {
+  margin-bottom: 0;
+  font-family: "kumbh sans";
+  color: var(--gray-text);
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+@media screen and (max-width: 500px) {
+  #workPage {
+    padding: 100px 0;
+  }
+  #workPage h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  #workPage #filter-controls {
+    margin-top: 20px;
+    top: 0;
+    width: 100vw;
+  }
+  #workPage #filter-controls div {
+    width: 100vw;
+    border-radius: 10px;
+  }
+  #workPage #filter-controls button {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+  #workPage #projects-list .item {
+    width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #373b3f;
+  }
+  #workPage #projects-list .item h3 {
+    font-size: 21px;
+  }
+  #workPage #projects-list .item iframe {
+    width: 320px;
+    height: 180px;
   }
 }
